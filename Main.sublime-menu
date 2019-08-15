@@ -1,0 +1,45 @@
+//---------------------------------------------------------------
+// MENU FILE
+//---------------------------------------------------------------
+[
+
+	//---------------------------------------------------------------
+	{
+		"caption": "Marks",
+		"mnemonic": "M",
+		"id": "bookmarks",
+		"children":
+		[
+
+			{ "caption": "MarkSearch Find", "command": "marksearch_from_pane" },
+			{ "caption": "MarkSearch From Caret", "command": "marksearch_from_caret" },
+			{ "caption": "MarkSearch Goto First Result", "command": "mark_gotobyindex", "args": {"key": "MarkSearch", "index": 0} },
+			{ "caption": "MarkSearch Previous", "command": "mark_goto_next", "args": {"key": "MarkSearch", "forward": false} },
+			{ "caption": "MarkSearch Next", "command": "mark_goto_next", "args": {"key": "MarkSearch", "forward": true} },
+			{ "caption": "MarkSearches Clear", "command": "clear_mark_with_status", "args": {"key": "MarkSearch" } },
+			//{ "caption": "Toggle Bookmark", "command": "toggle_bookmark_wholeline" },
+			// { "command": "toggle_bookmark" },
+			{ "caption": "-" },
+			//{ "caption": "Delete Bookmark", "command": "clear_bookmarks" },
+			// { "caption": "-" },
+			//{ "caption": "Bookmark Next", "command": "next_bookmark" },
+			//{ "caption": "Bookmark Previous", "command": "prev_bookmark" },
+			// { "caption": "-" },
+			//{ "caption": "Select All Bookmarks", "command": "select_all_bookmarks" },
+			{ "caption": "-" },
+			{ "caption": "MarkPersonal Set", "command": "markpersonal_line" },
+			{ "caption": "Marks All Clear", "command": "clear_mark_with_status", "args": {"key": "bookmarks" } },
+			{ "caption": "-" },
+			{ "caption": "MarkPersonal #1", "command": "mark_gotobyindex", "args": {"key": "bookmarks", "index": 0} },
+			{ "caption": "MarkPersonal #2", "command": "mark_gotobyindex", "args": {"key": "bookmarks", "index": 1} },
+			{ "caption": "MarkPersonal #3", "command": "mark_gotobyindex", "args": {"key": "bookmarks", "index": 2} },
+			{ "caption": "MarkPersonal #4", "command": "mark_gotobyindex", "args": {"key": "bookmarks", "index": 3} },
+			{ "caption": "MarkPersonal #5", "command": "mark_gotobyindex", "args": {"key": "bookmarks", "index": 4} },
+			{ "caption": "MarkPersonal #6", "command": "mark_gotobyindex", "args": {"key": "bookmarks", "index": 5} },
+			{ "caption": "MarkPersonal #7", "command": "mark_gotobyindex", "args": {"key": "bookmarks", "index": 6} },
+			{ "caption": "MarkPersonal #8", "command": "mark_gotobyindex", "args": {"key": "bookmarks", "index": 7} },
+		]
+	},
+	//---------------------------------------------------------------
+
+]
